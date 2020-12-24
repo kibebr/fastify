@@ -104,7 +104,7 @@ The type system heavily relies on generic properties to provide the most accurat
    curl localhost:8080/auth?username=admin&password=Password123!
    ```
    And it should return back `logged in!`
-6. But wait theres more! The generic interfaces are also available inside route level hook methods. Modify the previous route by adding a `preValidation` hook:
+6. But wait there's more! The generic interfaces are also available inside route level hook methods. Modify the previous route by adding a `preValidation` hook:
    ```typescript
    server.get<{
      Querystring: IQuerystring,
